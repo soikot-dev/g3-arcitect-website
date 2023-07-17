@@ -1,6 +1,59 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
-
+/* Shared styles */
 *{
     font-family: 'Work Sans', sans-serif;
+}
+.primary-btn{
+    padding: 10px;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}
+/* Header & Nav styles */
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 228px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    font-size: 2.50rem;
+}
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style-type: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav a{
+    text-decoration: none;
+    color: #424242;
+}
+/* Banner style */
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-title{
+    font-size: 4rem;
+    color: #131313;
+    font-weight: 700;
+}
+.banner-description{
+    color: #727272;
 }
