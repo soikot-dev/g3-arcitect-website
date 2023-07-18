@@ -18,7 +18,7 @@
     color: #fff;
     cursor: pointer;
 }
-main{
+.main{
    max-width: 1440px;
    margin: 0 auto;
 }
@@ -68,7 +68,7 @@ nav a{
     width: 100%;
     margin-top: 30px;
 }
-/* Features Styles */
+/* Team Styles */
 .team-wrap{
     display: flex;
     justify-content: space-between;
@@ -98,6 +98,49 @@ nav a{
 .quick-list-feature{
     font-weight: 700;
     color: #FF900E;
+}
+/* Features style */
+.features{
+    display: flex;
+    padding-top: 130px;
+    gap: 100px;
+}
+.features .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.features-content .card{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.features-img img{
+    height: 90%;
+    margin-left: 50px;
+}
+.ten-years-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years-badge h2{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.ten-years-badge p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 /* Fact Styles */
 .facts{
@@ -158,8 +201,15 @@ nav a{
 
 /* Footer styles */
 .footer{
-    background: #000;
-    padding: 10px 300px;
+    background: rgba(255, 144, 14, 0.10);
+    width: 1320px;
+    margin: 0 auto;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-top: 130px;
 }
 .copyright{
     font-weight: 400;
@@ -169,19 +219,13 @@ nav a{
     padding: 30px;
 }
 
-
-
-
-
-
-
 /* Responsive media queries */
 /* Mobile devices */
 @media screen and (max-width: 576px){
     header{
         padding: 20px;
     }
-    nav, .team-wrap, .sponsers-container{
+    nav, .team-wrap, .sponsers-container, .features{
         flex-direction: column;
     }
     .team-img{
@@ -197,6 +241,16 @@ nav a{
         flex-direction: column;
         row-gap: 20px;
     }
+    .features-img img{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .ten-years-badge{
+        position: static;
+    }
+    .footer{
+       width: 100%;
+    }
     
 }
 /* Tablet or Medium devices */
@@ -204,12 +258,16 @@ nav a{
     header{
         padding: 50px;
     }
-    nav, .team-wrap,.sponsers-container{
+    nav, .team-wrap,.sponsers-container, .features{
         flex-direction: column;
     }
     .team-content{
         padding-right: 20px;
         padding-left: 20px;
         padding-top: 20px;
+    }
+    .footer{
+        width:100%;
+        margin: 0 auto;
     }
 }
